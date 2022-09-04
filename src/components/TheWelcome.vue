@@ -5,6 +5,7 @@ import ToolingIcon from "./icons/IconTooling.vue";
 import EcosystemIcon from "./icons/IconEcosystem.vue";
 import CommunityIcon from "./icons/IconCommunity.vue";
 import SupportIcon from "./icons/IconSupport.vue";
+import { RouterLink } from "vue-router";
 </script>
 
 <template>
@@ -57,7 +58,7 @@ import SupportIcon from "./icons/IconSupport.vue";
     <a target="_blank" href="https://github.com/vuejs/awesome-vue"
       >Awesome Vue</a
     >
-    a visit.
+    a visit. Now visit the <RouterLink to="/about">About Page</RouterLink>.
   </WelcomeItem>
 
   <WelcomeItem>
