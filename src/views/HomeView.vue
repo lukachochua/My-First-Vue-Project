@@ -1,26 +1,14 @@
 <script setup>
-import TheWelcome from "@/components/TheWelcome.vue";
+  import { useFlash } from '@/composables/useFlash';
 
-
-let message = $ref("Hello World!");
-
-let doSomething = () => {
-  alert("Doing it now");
-};
-
-
-
+  let { flash } = useFlash();
+  
+  
+  
 </script>
 
 <template>
   <main>
-    <TheWelcome />
-
-    <p>{{ message }}</p>
-
-
-    <p>
-      <button @click="doSomething">Click me</button>
-    </p>
+    <button @click="flash('Test','It Works')">Click Me</button>
   </main>
 </template>
